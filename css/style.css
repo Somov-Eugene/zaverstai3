@@ -32,6 +32,10 @@
  *  GLOBAL
  *****************************
  */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", "Roboto", "Open Sans", sans-serif;
   font-weight: 400;
@@ -71,11 +75,36 @@ img {
   border: 0;
   padding: 0;
 
-  #ffffff-space: nowrap;
+  white-space: nowrap;
 
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.button {
+  cursor: pointer;
+  color: inherit;
+  outline-color: inherit;
+  background-color: #cc8b86;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 25px 65px;
+  border: none;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.button:hover,
+.button:focus {
+  color:#ffffff;
+  background-color: #bd554d;
+}
+
+.button:active {
+  color:#cc8b86;
+  background-color: #bd554d;
 }
 
 /*
@@ -83,6 +112,105 @@ img {
  *  header
  *****************************
  */
+.header {
+  min-height: 715px;
+  background-color: #ffffff;
+  background-image: url("../img/bg_main.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1400px 715px;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .header {
+    background-image: url("../img/bg_main@2x.jpg");
+  }
+}
+
+.header-nav {
+  padding: 36px 100px 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-logo {
+  padding-right: 89px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-logo img {
+  width: 25px;
+  height: 25px;
+}
+
+.nav-logo span {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.nav-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu-item {
+  padding-right: 26px;
+}
+
+.nav-menu-item:last-child{
+  padding-right: 0;
+}
+
+.nav-phone {
+  padding-left: 35px;
+}
+
+.nav-menu-item a,
+.nav-phone a {
+  text-decoration: none;
+  color: inherit;
+  outline-color: inherit;
+  outline-offset: 10px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.nav-menu-item:hover a,
+.nav-phone:hover a {
+  text-decoration: underline;
+}
+
+.header-hero {
+  padding-left: 182px;
+  max-width: 500px;
+}
+
+.header-hero-title {
+  margin: 0;
+  padding-bottom: 24px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 62px;
+}
+
+.header-hero-subtitle {
+  margin: 0;
+  padding-bottom: 21px;
+  max-width: 420px;
+}
+
+.header-hero-button {
+  display: inline-block;
+}
 
 
 /*
