@@ -1,0 +1,111 @@
+/************************** FONTS ******************************/
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+
+  src:
+    local("Montserrat Regular"),
+    local("Montserrat-Regular"),
+    url("../fonts/montserrat-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+
+  src:
+    local("Montserrat Medium"),
+    local("Montserrat-Medium"),
+    url("../fonts/montserrat-medium.woff2") format("woff2"),
+    url("../fonts/montserrat-medium.woff") format("woff");
+}
+/***************************************************************/
+
+
+/*
+ *****************************
+ *  GLOBAL
+ *****************************
+ */
+body {
+  font-family: "Montserrat", "Roboto", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+
+  background-color: #ffffff;
+  color: #533738;
+  min-width: 1440px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1400px;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  #ffffff-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*
+ *****************************
+ *  header
+ *****************************
+ */
+
+
+/*
+ *****************************
+ *  main
+ *****************************
+ */
+
+/*
+ * About
+ */
+
+/*
+ * Portfolio
+ */
+
+/*
+ * Write me
+ */
+
+
+/*
+ *****************************
+ *  footer
+ *****************************
+ */
